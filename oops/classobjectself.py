@@ -113,3 +113,155 @@ acc.display_balance()
 acc.deposit(5000)
 acc.withdraw(2000)
 acc.display_balance()  '''
+"""class student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks 
+    def is_pass(self):
+        return self.marks>40
+st1=student("pavan",85)
+st2=student("kumar",35)
+st3=student("yarramsetty",99)
+print(st1.is_pass())    
+print(st2.is_pass())
+print(st3.is_pass())"""
+#area of rectangle,circle,square
+"""class rectangle:
+    def __init__(self,length,breath):
+        self.length=length
+        self.breath=breath
+    def area(self):
+        print(self.length*self.breath)
+rc1=rectangle(5,10)
+rc1.area()
+class circle():
+    def __init__(self,radius):
+        self.radius=radius
+    def area_circumference(self):
+        print(f"area: {self.radius*self.radius*3.14}")
+        print(f"circumference: {2*3.14*self.radius}")
+c1=circle(5)
+c1.area_circumference()
+class square():
+    def __init__(self,side):
+        self.side=side
+    def area(self):
+        print(self.side*self.side)
+s1=square(5)
+s1.area()"""
+#employee salary system 
+"""class employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.__salary=salary
+    def yearly_salary(self):
+        print(f"yearly salary of {self.name} is {self.__salary*12}")
+emp1=employee("pavan",100000)
+emp1.yearly_salary()"""
+#library book system if avalible true else false
+"""class book:
+    def __init__(self,title,author,is_available=True):
+        self.title=title
+        self.author=author
+        self.is_available=is_available
+    def borrow_book(self):
+        if self.is_available:
+            self.is_available=False
+            print(f"you have borrowed {self.title} by {self.author}")
+        else:
+            print(f"sorry {self.title} is not available right now")
+    def return_book(self):
+        self.is_available=True
+        print(f"you have returned {self.title} by {self.author}")
+book1=book("atomic habits","pavan")
+book2=book("the silent patient","kumar")
+book1.borrow_book()
+book2.borrow_book()
+book1.return_book()"""
+#student managment system
+"""class student:
+    def __init__(self,name,marks=[]):
+        self.name=name
+        self.marks=marks
+    def average(self):
+        self.average=sum(self.marks)//len(self.marks)
+    def grade(self):
+        self.average()
+        avg=self.average
+        if avg>=90:
+            return "A"
+        elif avg>=80:
+            return "B"
+        elif avg>=70:
+            return "C"
+        elif avg>=60:
+            return "D"
+        else:
+            return "F"
+st1=student("pavan",[85,90,95])
+print(st1.grade())    """ 
+"""class AreaCalculator:
+    def __init__(self, radius, height, length, breadth):
+        self.radius = radius
+        self.height = height
+        self.length = length
+        self.breadth = breadth
+    def rectangle_area(self):
+        return self.length * self.breadth
+    
+    def square_area(self):
+        return self.length * self.length
+    
+    def circle_area(self):
+        return 3.14 * self.radius * self.radius
+
+    def cylinder_area(self):
+        return 2 * 3.14* self.radius * (self.radius + self.height)
+
+    def hemisphere_area(self):
+        return 2 * 3.14* self.radius * self.radius
+
+    def sphere_area(self):
+        return 4 * 3.14* self.radius * self.radius
+
+    def main_menu(self):
+        while True:
+            print("1. Rectangle")
+            print("2. Square")
+            print("3. Circle")
+            print("4. Cylinder")
+            print("5. Hemisphere")
+            print("6. Sphere")
+            choice = int(input("Enter your choice: "))
+
+            if choice == 1:
+                self.length = float(input("Enter length: "))
+                self.breadth = float(input("Enter breadth: "))
+                print("Area of Rectangle =", self.rectangle_area())
+
+            elif choice == 2:
+                self.length = float(input("Enter side length: "))
+                print("Area of Square =", self.square_area())
+
+            elif choice == 3:
+                self.radius = float(input("Enter radius: "))
+                print("Area of Circle =", self.circle_area())
+
+            elif choice == 4:
+                self.radius = float(input("Enter radius: "))
+                self.height = float(input("Enter height: "))
+                print("Surface Area of Cylinder =", self.cylinder_area())
+
+            elif choice == 5:
+                self.radius = float(input("Enter radius: "))
+                print("Surface Area of Hemisphere =", self.hemisphere_area())
+
+            elif choice == 6:
+                self.radius = float(input("Enter radius: "))
+                print("Surface Area of Sphere =", self.sphere_area())
+                break
+
+            else:
+                print("Invalid choice! Please try again.")
+calculator = AreaCalculator(0, 0, 0, 0)  
+calculator.main_menu() """ 
