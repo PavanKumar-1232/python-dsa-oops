@@ -265,3 +265,15 @@ print(st1.grade())    """
                 print("Invalid choice! Please try again.")
 calculator = AreaCalculator(0, 0, 0, 0)  
 calculator.main_menu() """ 
+#oops question 2
+"""class student:
+    def __init__(self,name,rollno,marks):
+        self.name=name
+        self.rollno=rollno
+        self.marks=marks
+    def display(self):
+        print(f"name:{self.name}, rollno:{self.rollno}, marks:{self.marks}")
+st1=student("pavan",7,85)
+st2=student("kumar",17,35)    
+st1.display()
+st2.display()"""
